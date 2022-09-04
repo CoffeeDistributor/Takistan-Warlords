@@ -525,16 +525,11 @@ switch (_displayClass) do {
 			};
 		}];
 		_purchase_drop_sector ctrlAddEventHandler ["ButtonClick", {
-			_visitedSectorID = (BIS_WL_sectorsArray # 0) findIf {player inArea (_x getVariable "objectAreaComplete")};
-			if ((_visitedSectorID == -1)) then { // if not inside an owned sector
-			    playSound "AddItemFailed";
-			} else {
-				if (uiNamespace getVariable ["BIS_WL_purchaseMenuDropSectorAffordable", FALSE]) then {
+			if (uiNamespace getVariable ["BIS_WL_purchaseMenuDropSectorAffordable", FALSE]) then {
 				playSound "AddItemOK";
 				[FALSE] spawn BIS_fnc_WL2_orderAirdrop
-			    } else {
-					playSound "AddItemFailed";
-				};
+			} else {
+				playSound "AddItemFailed";
 			};
 		}];
 		
@@ -664,7 +659,7 @@ switch (_displayClass) do {
 				(_display displayCtrl _i) ctrlCommit 0;
 			};
 			playSound "AddItemFailed";
-			[player, BIS_WL_fundsTransferCost] call BIS_fnc_WL2_fundsControl;
+			[player, BIS_WL_transferCost] call BIS_fnc_WL2_fundsControl;
 		}];
 		
 		((uiNamespace getVariable ["BIS_WL_purchaseMenuLastSelection", [0, 0, 0]]) # 0) call BIS_fnc_WL2_sub_purchaseMenuSetItemsList;

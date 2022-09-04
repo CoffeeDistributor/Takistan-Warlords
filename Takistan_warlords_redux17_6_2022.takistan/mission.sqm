@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=105;
+		nextID=112;
 	};
 	class Camera
 	{
-		pos[]={6424.7852,774.82745,11303.53};
-		dir[]={0.84629458,-0.46296448,-0.26359558};
-		up[]={0.44202715,0.88637435,-0.13767889};
-		aside[]={-0.29738393,3.8678991e-007,-0.95477563};
+		pos[]={6416.2471,784.04529,11300.282};
+		dir[]={0.65471774,-0.47013456,0.59190708};
+		up[]={0.34874931,0.88259292,0.31529123};
+		aside[]={0.67064196,3.1787204e-007,-0.74180728};
 	};
 };
 binarizationWanted=0;
@@ -40,6 +40,7 @@ addons[]=
 	"CUP_Weapons_West_Attachments",
 	"CUP_Weapons_Ammunition",
 	"CUP_Weapons_M9",
+	"jsrs_soundmod_cup_weapons",
 	"CUP_Weapons_Items",
 	"A3_Weapons_F",
 	"CUP_Weapons_NVG",
@@ -48,6 +49,7 @@ addons[]=
 	"CUP_Weapons_Grenades",
 	"CUP_Creatures_Military_Russia",
 	"CUP_CAMisc",
+	"emr_main",
 	"CUP_Misc3_Config",
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Structures_F_Enoch_Military_Barracks",
@@ -69,7 +71,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=29;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -130,91 +132,103 @@ class AddonsMetaData
 		};
 		class Item10
 		{
+			className="CUP_Weapons_AK";
+			name="jsrs_soundmod_cup_weapons";
+		};
+		class Item11
+		{
 			className="CUP_Weapons_Items";
 			name="CUP_Weapons_Items";
 		};
-		class Item11
+		class Item12
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item13
 		{
 			className="CUP_Weapons_NVG";
 			name="CUP_Weapons_NVG";
 		};
-		class Item13
+		class Item14
 		{
 			className="CUP_Creatures_Extra";
 			name="CUP_Creatures_Extra_IOTV";
 		};
-		class Item14
+		class Item15
 		{
 			className="CUP_Weapons_Grenades";
 			name="CUP_Weapons_Grenades";
 		};
-		class Item15
+		class Item16
 		{
 			className="CUP_Creatures_Military_Russia";
 			name="CUP_Creatures_Military_Russia";
 		};
-		class Item16
+		class Item17
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item17
+		class Item18
+		{
+			className="emr_main";
+			name="Enhanced Movement Rework";
+			author="Simplex Team";
+			url="https://github.com/SceptreOfficial/Enhanced-Movement-Rework";
+		};
+		class Item19
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item18
+		class Item20
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item21
 		{
 			className="CUP_WheeledVehicles_Ural";
 			name="CUP_WheeledVehicles_Ural";
 		};
-		class Item20
+		class Item22
 		{
 			className="CUP_WheeledVehicles_Hilux";
 			name="CUP_WheeledVehicles_Hilux";
 		};
-		class Item21
+		class Item23
 		{
 			className="CUP_Creatures_Military_TakiInsurgents";
 			name="CUP_Creatures_Military_TakiInsurgents";
 		};
-		class Item22
+		class Item24
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item25
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item24
+		class Item26
 		{
 			className="CUP_Editor_Plants_Config";
 			name="CUP_Editor_Plants_Config";
 		};
-		class Item25
+		class Item27
 		{
 			className="CUP_Desert2_Config";
 			name="CUP_Desert2_Config";
 		};
-		class Item26
+		class Item28
 		{
 			className="CUP_CAStructures_Mil";
 			name="CUP_CAStructures_Mil";
